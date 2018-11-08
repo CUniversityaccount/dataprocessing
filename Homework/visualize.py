@@ -36,7 +36,6 @@ class Information():
         # set up the data to get
         avarage_list = []
         avarage = 0
-        counter = 0
 
         for key in self.data.keys():
 
@@ -45,10 +44,9 @@ class Information():
                 for list in self.data[key]:
                     avarage += float(list[2])
                     counter += 1
-                avarage = avarage / counter
+                avarage = avarage / len(self.data[key])
                 avarage_list.append(avarage)
                 avarage = 0
-                counter = 0
         return avarage_list
 
     def line_char(self):
