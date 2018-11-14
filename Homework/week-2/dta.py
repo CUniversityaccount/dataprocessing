@@ -109,7 +109,7 @@ def histogram(file, selection):
 
     # export the png for further use
     export_png(histogram, filename="histogram.png")
-    show(histogram.bokeh())
+    show(histogram)
 
 def five_number_summary(file, selection):
     data = file[selection].tolist()
@@ -164,6 +164,7 @@ def json_file(file, selection):
         dict.update({country : list})
 
     # makes the file with the correct lay-out
+    print(dict)
     with open('data.json', 'w') as outfile:
         json.dump(dict, outfile, indent=2)
 
