@@ -109,6 +109,7 @@ def histogram(file, selection):
 
     # export the png for further use
     export_png(histogram, filename="histogram.png")
+    show(histogram.bokeh())
 
 def five_number_summary(file, selection):
     data = file[selection].tolist()
@@ -140,6 +141,7 @@ def five_number_summary(file, selection):
     plt.boxplot(data['data'], showfliers=True)
 
     # save the plot as a png
+    plt.show()
     plt.savefig('boxplot.png')
 
 # creates JSON file
