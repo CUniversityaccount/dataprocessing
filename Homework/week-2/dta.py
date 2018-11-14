@@ -107,8 +107,6 @@ def histogram(file, selection):
                    left=histogram_gdp['left'], right=histogram_gdp['right'],
                    color='red', line_color='black')
 
-    # export the png for further use
-    export_png(histogram, filename="histogram.png")
     show(histogram)
 
 def five_number_summary(file, selection):
@@ -140,9 +138,8 @@ def five_number_summary(file, selection):
     plt.ylabel(selection)
     plt.boxplot(data['data'], showfliers=True)
 
-    # save the plot as a png
+    # shows the plot
     plt.show()
-    plt.savefig('boxplot.png')
 
 # creates JSON file
 def json_file(file, selection):
@@ -164,7 +161,7 @@ def json_file(file, selection):
         dict.update({country : list})
 
     # makes the file with the correct lay-out
-    print(dict)
+
     with open('data.json', 'w') as outfile:
         json.dump(dict, outfile, indent=2)
 
