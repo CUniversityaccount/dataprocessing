@@ -75,6 +75,10 @@ def histogram(file, selection):
     # put the filtered data in a dataframe
     list = pd.DataFrame(list)
 
+    # get the number where 98% is countries are above
+    quantile_098 = list.quantile(0.98).tolist()
+    list = list.clip(float(list.min()), float(quantile_098[0]))
+
     # calculates the mean, mode, median for the GDP
     mean = list.mean()
     median = list.median()
@@ -89,14 +93,13 @@ def histogram(file, selection):
     interval = 1000
     data = np.array(list)
     data = data[~np.isnan(data)]
-    array_hist, edges = np.histogram(data, bins = int((list.min() + max_value)/interval),
+    array_hist, edges = np.histogram(data, bins = int((list.min() + quantile_098[0])/interval),
                                      range = [int(list.min()), max_value])
 
     # makes histogram
     histogram_gdp = pd.DataFrame({'number': array_hist,
                                   'left': edges[:-1],
                                   'right': edges[1:]})
-    print(histogram_gdp)
     histogram = figure(title="Histogram of GDP")
     histogram.xaxis.axis_label = "GDP"
     histogram.yaxis.axis_label = "Frequency"
