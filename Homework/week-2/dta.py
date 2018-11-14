@@ -154,8 +154,8 @@ def json_file(file, selection):
         dict.update({country : list})
 
     # makes the file with the correct lay-out
-    with open('data.txt', 'w') as outfile:
-        json.dump(dict, outfile, indent=4)
+    with open('data.json', 'w') as outfile:
+        json.dump(dict, outfile, indent=2)
 
 
 if __name__ == "__main__":
