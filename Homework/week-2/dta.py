@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+ #!/usr/bin/env python
 # Name: Coen Mol
 # Student number: 12309524
 """This script goes through the input file"""
@@ -55,6 +55,9 @@ def parsing(file):
 
 # makes a histogram
 def histogram(file, selection):
+
+    # max value is to remove the outliers
+    max_value = 40000
     data = file
     list = data[selection].tolist()
 
@@ -83,15 +86,17 @@ def histogram(file, selection):
 
     # creating the data for the histogram, interval = 1000,
     # range is minimun until 40000
+    interval = 1000
     data = np.array(list)
     data = data[~np.isnan(data)]
-    array_hist, edges = np.histogram(data, bins = int((500 + 40000)/1000),
-                                     range = [500, 40000])
+    array_hist, edges = np.histogram(data, bins = int((list.min() + max_value)/interval),
+                                     range = [int(list.min()), max_value])
 
     # makes histogram
     histogram_gdp = pd.DataFrame({'number': array_hist,
                                   'left': edges[:-1],
                                   'right': edges[1:]})
+    print(histogram_gdp)
     histogram = figure(title="Histogram of GDP")
     histogram.xaxis.axis_label = "GDP"
     histogram.yaxis.axis_label = "Frequency"
