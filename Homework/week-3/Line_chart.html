@@ -5,9 +5,12 @@
   </head>
   <body>
 
-      <h1>My First Heading</h1>
+      <h1>Temperature from 2001 to 2018</h1>
+      <h2>Made by Coen Mol, 1209524
+      <canvas  id="myCanvas" width="1200" height="500"></canvas>
       <script type="module">
-      import { canvas } from "./canvas.js";
+      import { canvasCalculate } from "./canvas.js";
+      import { makeCanvas } from "./canvas.js";
 
       var fileName = "data_knmi.json";
         var txtFile = new XMLHttpRequest();
@@ -15,13 +18,15 @@
             if (txtFile.readyState === 4 && txtFile.status == 200) {
               console.log(JSON.parse(txtFile.responseText));
               var data = JSON.parse(txtFile.responseText);
-              console.log(canvas(data))
+              makeCanvas(canvasCalculate(data))
             }
         }
       txtFile.open("GET", fileName);
       txtFile.send();
 
       </script>
+
+
 
     </body>
 </html>

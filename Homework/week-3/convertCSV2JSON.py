@@ -16,7 +16,7 @@ def csv_document(file):
                     line = line.split(',')
                     csv_reader.writerow(line)
 
-def json_document(file, variables):
+def json_document(file, variables, date):
     variables = variables.split(", ")
     new_file = []
     dict = {}
@@ -46,11 +46,16 @@ def json_document(file, variables):
                 dict = {}
 
         dataframe = pd.DataFrame(new_file)
+        # removes data before 2001 01 01
+        dataframe = dataframe.ix[~(dataframe[variables[0]] < date)]
 
+        # removes all the colums with non data
         try:
             column = dataframe.columns[dataframe.isnull().all()].tolist()
         except:
             print("No Nan in whole columns")
+
+        # prepare the data in a json file
         dataframe = dataframe.drop(columns=column)
         data = dataframe.to_json(orient='records')
         data = json.loads(data)
@@ -62,4 +67,4 @@ def json_document(file, variables):
 if __name__ == "__main__":
     csv_document("knmi_data.txt")
     file = ("YYYYMMDD, TG")
-    json_document("knmi_data.csv", file)
+    json_document("knmi_data.csv", file, 20010101)
