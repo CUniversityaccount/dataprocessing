@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+  </head>
+  <body>
+
+      <h1>My First Heading</h1>
+      <script type="module">
+      import { canvas } from "./canvas.js";
+
+      var fileName = "data_knmi.json";
+        var txtFile = new XMLHttpRequest();
+        txtFile.onreadystatechange = function() {
+            if (txtFile.readyState === 4 && txtFile.status == 200) {
+              console.log(JSON.parse(txtFile.responseText));
+              var data = JSON.parse(txtFile.responseText);
+              console.log(canvas(data))
+            }
+        }
+      txtFile.open("GET", fileName);
+      txtFile.send();
+
+      </script>
+
+    </body>
+</html>

@@ -16,7 +16,8 @@ def csv_document(file):
                     line = line.split(',')
                     csv_reader.writerow(line)
 
-def json_document(file):
+def json_document(file, variables):
+    variables = variables.split(", ")
     new_file = []
     dict = {}
 
@@ -27,15 +28,16 @@ def json_document(file):
         for count, row in enumerate(text):
             for key, item in row.items():
                 item = deepcopy(item.strip())
+
                 # strips the spaces out of key and look
                 # if the item contains a string or float
-                if item == '':
+                if item == '' and key.strip() in variables:
                     dict.update({key: np.nan})
-                else:
+                elif key.strip() in variables:
                     try:
                         dict.update({key.strip(): float(item.strip())})
                     except:
-                        dict.update({key: item.replace(" ", "_")})
+                        dict.update({key: item.replace(" ", "")})
 
 
             # checks if there is data in the dictionary
@@ -44,17 +46,20 @@ def json_document(file):
                 dict = {}
 
         dataframe = pd.DataFrame(new_file)
+
         try:
             column = dataframe.columns[dataframe.isnull().all()].tolist()
         except:
             print("No Nan in whole columns")
         dataframe = dataframe.drop(columns=column)
-        data = dataframe.to_json(orient='records', lines=True)
+        data = dataframe.to_json(orient='records')
+        data = json.loads(data)
 
         with open('data_knmi.json', 'w') as outfile:
-            outfile.write(data)
+            json.dump(data, outfile, indent=4)
 
 
 if __name__ == "__main__":
     csv_document("knmi_data.txt")
-    json_document("knmi_data.csv")
+    file = ("YYYYMMDD, TG")
+    json_document("knmi_data.csv", file)

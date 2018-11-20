@@ -1,0 +1,25 @@
+Answers to the questions:
+	Explain the difference between the == operator and the === operator:
+	The == operator is named the equality operator. It is used to compare primitives and objects.
+	By objects it will confuse itself, because it will compare the memory place.
+	
+	The === will compare the values which are given to the operator.
+
+	----
+
+	Explain what a closure is:
+	A closure is a block of code that can be refenced to its surrounding state and a combination of a function which are enclosed for the outside.
+	
+	----
+	
+	Explain what higher order functions are:
+	Higher function order are functions that acacept another function as an argument.
+	The return of the function will be the variable of the variable.
+
+	----
+	Explain what a query selector is and give an example line of JavaScript that uses a query selector.
+	It will select from a html file the first element you want to find.
+
+	var element = document.querySelector("#main");
+	
+	This will choose the id element where the id is main
