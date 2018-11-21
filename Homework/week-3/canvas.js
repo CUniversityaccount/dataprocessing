@@ -77,9 +77,15 @@ export function makeCanvas(data) {
 
   for (var count = 0; count < tempXaxis.length; count++) {
 
-    context.moveTo( graphLeft, (graphHeight - (tempXaxis[count] * 10 + (-minTempAvr)) / graphHeight * graphHeight) + graphTop);
-    context.lineTo( graphRight + graphLeft, (graphHeight - (tempXaxis[count] * 10 + (-minTempAvr)) / graphHeight * graphHeight) + graphTop);
-    context.fillText(tempXaxis[count] + " C", graphLeft - 30, (graphHeight - (tempXaxis[count] * 10 + (-minTempAvr)) / graphHeight * graphHeight) + graphTop);
+    context.moveTo(graphLeft,
+                  (graphHeight - (tempXaxis[count] * 10 + (-minTempAvr)) /
+                   graphHeight * graphHeight) + graphTop);
+    context.lineTo(graphRight + graphLeft,
+                  (graphHeight - (tempXaxis[count] * 10 + (-minTempAvr)) /
+                   graphHeight * graphHeight) + graphTop);
+    context.fillText(tempXaxis[count] + " C", graphLeft - 30,
+                    (graphHeight - (tempXaxis[count] * 10 + (-minTempAvr)) /
+                     graphHeight * graphHeight) + graphTop);
   };
 
 
@@ -104,8 +110,12 @@ export function makeCanvas(data) {
 
   // makes the y axis
   for (var count = 0; count < tempXaxis.length; count++) {
-    context.moveTo( graphLeft - 5, (graphHeight - (tempXaxis[count] * 10 + (-minTempAvr)) / graphHeight * graphHeight) + graphTop);
-    context.lineTo( graphLeft, (graphHeight - (tempXaxis[count] * 10 + (-minTempAvr)) / graphHeight * graphHeight) + graphTop);
+    context.moveTo(graphLeft - 5,
+                  (graphHeight - (tempXaxis[count] * 10 + (-minTempAvr)) /
+                   graphHeight * graphHeight) + graphTop);
+    context.lineTo(graphLeft,
+                  (graphHeight - (tempXaxis[count] * 10 + (-minTempAvr)) /
+                   graphHeight * graphHeight) + graphTop);
   };
 
 
@@ -135,10 +145,14 @@ export function makeCanvas(data) {
   // draw reference value for day of the week and makes the line in the graph
   for( var count = 1; count < maxDay; count++ ){
     if (tempAvr[count] >= 0) {
-      context.lineTo( graphRight / maxDay * count + graphLeft, (graphHeight - (tempAvr[count] + (-minTempAvr)) / graphHeight * graphHeight) + graphTop);
+      context.lineTo(graphRight / maxDay * count + graphLeft,
+                    (graphHeight - (tempAvr[count] + (-minTempAvr)) /
+                     graphHeight * graphHeight) + graphTop);
       }
     else {
-      context.lineTo( graphRight / maxDay * count + graphLeft, (graphHeight - ((-minTempAvr + tempAvr[count]) / graphHeight * graphHeight)) + graphTop);
+      context.lineTo(graphRight / maxDay * count + graphLeft,
+                    (graphHeight - ((-minTempAvr + tempAvr[count]) /
+                     graphHeight * graphHeight)) + graphTop);
       }
 
   }
