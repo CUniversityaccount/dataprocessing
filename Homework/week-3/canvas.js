@@ -38,42 +38,73 @@ export function makeCanvas(data) {
   var canvas = document.getElementById("myCanvas");
   var context = canvas.getContext("2d");
 
-  // makes canvas
-  var graphTop = 25;
-  var graphBottom = 25 + (maxTempAvr - minTempAvr);
-  var graphLeft = 25;
-  var graphRight = maxDay + 25;
+  // makes canvas and variables
+  var tempXaxis = [-15, -10, -5, 0, 5 , 10, 15, 20, 25]
+  var graphTop = 50;
+  var graphBottom = 550;
+  var graphLeft = 50;
+  var graphRight = 1200;
 
   var graphHeight = (maxTempAvr - minTempAvr);
   var graphWidth = 1200;
 
   // makes x, y axis
   context.beginPath();
-  context.moveTo(graphLeft, graphTop);
+  context.moveTo(graphLeft, graphTop)
   context.lineTo(graphLeft, graphBottom);
-  context.lineTo(graphRight, graphBottom);
+  context.lineTo(graphRight, graphBottom)
+  context.lineTo(graphRight, graphTop)
+  context.lineTo(graphLeft, graphTop)
   context.stroke();
 
+  // makes the roster
   context.beginPath();
-  context.moveTo(graphLeft, (graphHeight + minTempAvr) + 25)
-  context.lineTo(graphRight, (graphHeight + minTempAvr) + 25)
-  context.stroke()
+  context.strokeStyle = "lightgrey";
 
-  context.beginPath();
+  for (var count = 0; count < tempXaxis.length; count++) {
+
+    context.moveTo( graphLeft, (graphHeight - (tempXaxis[count] * 10 + (-minTempAvr)) / graphHeight * graphHeight) + graphTop);
+    context.lineTo( graphRight, (graphHeight - (tempXaxis[count] * 10 + (-minTempAvr)) / graphHeight * graphHeight) + graphTop);
+    context.fillText(tempXaxis[count] + " C", graphLeft - 30, (graphHeight - (tempXaxis[count] * 10 + (-minTempAvr)) / graphHeight * graphHeight) + graphTop);
+  };
 
   var year_data = 20010101
   var year = 2001
 
-  for( var count = 1; count < maxDay; count++ ){
+  for( var count = 0; count < maxDay; count++ ){
     if (day[count] === year_data) {
-      context.moveTo(graphRight / day.length * count, graphTop);
-      context.lineTo(graphRight / day.length * count, graphBottom)
-      context.fillText(year, graphRight / day.length * count, graphBottom + 25);
+      var date = "01-01-" + year;
+      context.moveTo((graphRight / maxDay * count) + 50, graphTop);
+      context.lineTo((graphRight / maxDay * count) + 50, graphBottom)
+      context.fillText(date , 25 + (graphRight / maxDay * count), graphBottom + 25);
       year_data += 10000
       year += 1
     }
   }
   context.stroke()
+
+  // make the point on the x-axis and y- axis
+  context.beginPath();
+  context.strokeStyle = "black";
+
+  for (var count = 0; count < tempXaxis.length; count++) {
+    context.moveTo( graphLeft - 5, (graphHeight - (tempXaxis[count] * 10 + (-minTempAvr)) / graphHeight * graphHeight) + graphTop);
+    context.lineTo( graphLeft, (graphHeight - (tempXaxis[count] * 10 + (-minTempAvr)) / graphHeight * graphHeight) + graphTop);
+  };
+
+  year_data = 20010101
+  year = 2001
+
+  for( var count = 0; count < maxDay; count++ ){
+    if (day[count] === year_data) {
+      var date = "01-01-" + year;
+      context.moveTo((graphRight / maxDay * count) + 50, graphBottom)
+      context.lineTo((graphRight / maxDay * count) + 50, graphBottom + 10)
+      year_data += 10000
+      year += 1
+    }
+  }
+  context.stroke();
 
 
   context.beginPath();
