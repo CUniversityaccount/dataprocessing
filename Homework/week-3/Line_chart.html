@@ -9,9 +9,11 @@
       <h2>Made by Coen Mol, 1209524</h2>
 
       <script type="module">
+      // import the needed function
       import { canvasCalculate } from "./canvas.js";
       import { makeCanvas } from "./canvas.js";
 
+      // get the data out of the jsonfile
       var fileName = "data_knmi.json";
         var txtFile = new XMLHttpRequest();
         txtFile.onreadystatechange = function() {
@@ -25,7 +27,7 @@
       txtFile.send();
 
       </script>
-      <canvas  id="myCanvas" width="1300" height="600"></canvas>
+      <canvas  id="myCanvas" width="1500" height="600"></canvas>
       <p></p>
 
 
