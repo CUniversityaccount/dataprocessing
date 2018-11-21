@@ -56,8 +56,8 @@ export function makeCanvas(data) {
   var tempXaxis = [-15, -10, -5, 0, 5 , 10, 15, 20, 25, 30]
   var graphTop = 50;
   var graphBottom = 550;
-  var graphLeft = 50;
-  var graphRight = 1250;
+  var graphLeft = 100;
+  var graphRight = 1300;
 
   var graphHeight = (maxTempAvr - minTempAvr) + 50;
   var graphWidth = 1250;
@@ -74,6 +74,12 @@ export function makeCanvas(data) {
   // makes the roster
   context.beginPath();
   context.strokeStyle = "lightgrey";
+
+  // draw titles
+  context.fillText( "Date", graphRight/ 3, graphBottom + 50);
+  context.fillText( "Temperature",  graphLeft - 100, graphBottom / 2);
+
+
 
   for (var count = 0; count < tempXaxis.length; count++) {
 
@@ -98,7 +104,7 @@ export function makeCanvas(data) {
       var date = "01-01-" + year;
       context.moveTo((graphRight / maxDay * count) + 50, graphTop);
       context.lineTo((graphRight / maxDay * count) + 50, graphBottom)
-      context.fillText(date , 25 + (graphRight / maxDay * count), graphBottom + 25);
+      context.fillText(date , graphLeft - 20 + (graphRight / maxDay * count), graphBottom + 25);
       year_data += 10000
       year += 1
     }
@@ -126,8 +132,8 @@ export function makeCanvas(data) {
   for( var count = 0; count < maxDay; count++ ){
     if (day[count] === year_data) {
       var date = "01-01-" + year;
-      context.moveTo((graphRight / maxDay * count) + 50, graphBottom)
-      context.lineTo((graphRight / maxDay * count) + 50, graphBottom + 10)
+      context.moveTo((graphRight / maxDay * count) + graphLeft, graphBottom)
+      context.lineTo((graphRight / maxDay * count) + graphLeft, graphBottom + 10)
       year_data += 10000
       year += 1
     }
