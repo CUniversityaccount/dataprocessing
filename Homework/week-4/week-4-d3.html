@@ -1,18 +1,31 @@
 <!DOCTYPE html>
+
 <html>
   <head>
-    <script type="text/javascript" src="d3/d3.min.js"></script>
+    <script src="d3/d3.min.js"></script>
+    <style>
+    .bar {
+      fill : grey;
+    }
+    .bar:hover {
+      fill: red;
+    }
+    .toolTip {
+      position: absolute;
+      min-width: 20px;
+      background: white;
+      border-style: solid;
+      border-width: medium;
+      fill: white;
+      padding: 5px;
+      text-align: center;
+    }
+    </style>
   </head>
   <body>
-    <h1>Barchart</h1>
-    <script src="d3-javascript.js">
-    </script>
-    <div class="block"
-      style="display: inline-block;
-            width: 20px;
-            height: 75px;
-            background-color: teal;"></div>
-
-
+  <svg width="1200" height="1200"></svg>
+  <div></div>
+  <script src="d3-javascript.js"></script>
   </body>
+
 </html>
