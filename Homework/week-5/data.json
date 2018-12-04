@@ -1,0 +1,623 @@
+[
+    {
+        "Perioden": "1950",
+        "aantallen 20 tot 40 jaar aantal": "2951369",
+        "aantallen 40 tot 65 jaar aantal": "2562311",
+        "aantallen 65 tot 80 jaar aantal": "670995",
+        "aantallen 80 jaar of ouder aantal": "99599",
+        "aantallen Jonger dan 20 jaar aantal": "3742499",
+        "aantallen Totale bevolking aantal": "10026773"
+    },
+    {
+        "Perioden": "1951",
+        "aantallen 20 tot 40 jaar aantal": "2985744",
+        "aantallen 40 tot 65 jaar aantal": "2614428",
+        "aantallen 65 tot 80 jaar aantal": "690449",
+        "aantallen 80 jaar of ouder aantal": "104042",
+        "aantallen Jonger dan 20 jaar aantal": "3805617",
+        "aantallen Totale bevolking aantal": "10200280"
+    },
+    {
+        "Perioden": "1952",
+        "aantallen 20 tot 40 jaar aantal": "2999353",
+        "aantallen 40 tot 65 jaar aantal": "2656483",
+        "aantallen 65 tot 80 jaar aantal": "710729",
+        "aantallen 80 jaar of ouder aantal": "107790",
+        "aantallen Jonger dan 20 jaar aantal": "3853988",
+        "aantallen Totale bevolking aantal": "10328343"
+    },
+    {
+        "Perioden": "1953",
+        "aantallen 20 tot 40 jaar aantal": "2996594",
+        "aantallen 40 tot 65 jaar aantal": "2700881",
+        "aantallen 65 tot 80 jaar aantal": "729809",
+        "aantallen 80 jaar of ouder aantal": "113609",
+        "aantallen Jonger dan 20 jaar aantal": "3894738",
+        "aantallen Totale bevolking aantal": "10435631"
+    },
+    {
+        "Perioden": "1954",
+        "aantallen 20 tot 40 jaar aantal": "2994204",
+        "aantallen 40 tot 65 jaar aantal": "2744425",
+        "aantallen 65 tot 80 jaar aantal": "747436",
+        "aantallen 80 jaar of ouder aantal": "119342",
+        "aantallen Jonger dan 20 jaar aantal": "3945330",
+        "aantallen Totale bevolking aantal": "10550737"
+    },
+    {
+        "Perioden": "1955",
+        "aantallen 20 tot 40 jaar aantal": "2997145",
+        "aantallen 40 tot 65 jaar aantal": "2792024",
+        "aantallen 65 tot 80 jaar aantal": "765017",
+        "aantallen 80 jaar of ouder aantal": "124954",
+        "aantallen Jonger dan 20 jaar aantal": "4000883",
+        "aantallen Totale bevolking aantal": "10680023"
+    },
+    {
+        "Perioden": "1956",
+        "aantallen 20 tot 40 jaar aantal": "3013487",
+        "aantallen 40 tot 65 jaar aantal": "2832042",
+        "aantallen 65 tot 80 jaar aantal": "782200",
+        "aantallen 80 jaar of ouder aantal": "130298",
+        "aantallen Jonger dan 20 jaar aantal": "4063634",
+        "aantallen Totale bevolking aantal": "10821661"
+    },
+    {
+        "Perioden": "1957",
+        "aantallen 20 tot 40 jaar aantal": "3027385",
+        "aantallen 40 tot 65 jaar aantal": "2869124",
+        "aantallen 65 tot 80 jaar aantal": "800553",
+        "aantallen 80 jaar of ouder aantal": "135513",
+        "aantallen Jonger dan 20 jaar aantal": "4124465",
+        "aantallen Totale bevolking aantal": "10957040"
+    },
+    {
+        "Perioden": "1958",
+        "aantallen 20 tot 40 jaar aantal": "3041247",
+        "aantallen 40 tot 65 jaar aantal": "2906002",
+        "aantallen 65 tot 80 jaar aantal": "818343",
+        "aantallen 80 jaar of ouder aantal": "142029",
+        "aantallen Jonger dan 20 jaar aantal": "4188105",
+        "aantallen Totale bevolking aantal": "11095726"
+    },
+    {
+        "Perioden": "1959",
+        "aantallen 20 tot 40 jaar aantal": "3076070",
+        "aantallen 40 tot 65 jaar aantal": "2940435",
+        "aantallen 65 tot 80 jaar aantal": "843228",
+        "aantallen 80 jaar of ouder aantal": "147836",
+        "aantallen Jonger dan 20 jaar aantal": "4270455",
+        "aantallen Totale bevolking aantal": "11278024"
+    },
+    {
+        "Perioden": "1960",
+        "aantallen 20 tot 40 jaar aantal": "3098779",
+        "aantallen 40 tot 65 jaar aantal": "2968611",
+        "aantallen 65 tot 80 jaar aantal": "864423",
+        "aantallen 80 jaar of ouder aantal": "154399",
+        "aantallen Jonger dan 20 jaar aantal": "4331042",
+        "aantallen Totale bevolking aantal": "11417254"
+    },
+    {
+        "Perioden": "1961",
+        "aantallen 20 tot 40 jaar aantal": "3100271",
+        "aantallen 40 tot 65 jaar aantal": "3020409",
+        "aantallen 65 tot 80 jaar aantal": "887637",
+        "aantallen 80 jaar of ouder aantal": "160947",
+        "aantallen Jonger dan 20 jaar aantal": "4386744",
+        "aantallen Totale bevolking aantal": "11556008"
+    },
+    {
+        "Perioden": "1962",
+        "aantallen 20 tot 40 jaar aantal": "3114828",
+        "aantallen 40 tot 65 jaar aantal": "3065393",
+        "aantallen 65 tot 80 jaar aantal": "912524",
+        "aantallen 80 jaar of ouder aantal": "167529",
+        "aantallen Jonger dan 20 jaar aantal": "4461142",
+        "aantallen Totale bevolking aantal": "11721416"
+    },
+    {
+        "Perioden": "1963",
+        "aantallen 20 tot 40 jaar aantal": "3141795",
+        "aantallen 40 tot 65 jaar aantal": "3108573",
+        "aantallen 65 tot 80 jaar aantal": "934630",
+        "aantallen 80 jaar of ouder aantal": "172802",
+        "aantallen Jonger dan 20 jaar aantal": "4532162",
+        "aantallen Totale bevolking aantal": "11889962"
+    },
+    {
+        "Perioden": "1964",
+        "aantallen 20 tot 40 jaar aantal": "3174758",
+        "aantallen 40 tot 65 jaar aantal": "3150735",
+        "aantallen 65 tot 80 jaar aantal": "955313",
+        "aantallen 80 jaar of ouder aantal": "177392",
+        "aantallen Jonger dan 20 jaar aantal": "4583772",
+        "aantallen Totale bevolking aantal": "12041970"
+    },
+    {
+        "Perioden": "1965",
+        "aantallen 20 tot 40 jaar aantal": "3227357",
+        "aantallen 40 tot 65 jaar aantal": "3191097",
+        "aantallen 65 tot 80 jaar aantal": "976752",
+        "aantallen 80 jaar of ouder aantal": "185782",
+        "aantallen Jonger dan 20 jaar aantal": "4631281",
+        "aantallen Totale bevolking aantal": "12212269"
+    },
+    {
+        "Perioden": "1966",
+        "aantallen 20 tot 40 jaar aantal": "3274528",
+        "aantallen 40 tot 65 jaar aantal": "3227483",
+        "aantallen 65 tot 80 jaar aantal": "996411",
+        "aantallen 80 jaar of ouder aantal": "193237",
+        "aantallen Jonger dan 20 jaar aantal": "4685535",
+        "aantallen Totale bevolking aantal": "12377194"
+    },
+    {
+        "Perioden": "1967",
+        "aantallen 20 tot 40 jaar aantal": "3397478",
+        "aantallen 40 tot 65 jaar aantal": "3259448",
+        "aantallen 65 tot 80 jaar aantal": "1018765",
+        "aantallen 80 jaar of ouder aantal": "200060",
+        "aantallen Jonger dan 20 jaar aantal": "4659556",
+        "aantallen Totale bevolking aantal": "12535307"
+    },
+    {
+        "Perioden": "1968",
+        "aantallen 20 tot 40 jaar aantal": "3485200",
+        "aantallen 40 tot 65 jaar aantal": "3283600",
+        "aantallen 65 tot 80 jaar aantal": "1043617",
+        "aantallen 80 jaar of ouder aantal": "208522",
+        "aantallen Jonger dan 20 jaar aantal": "4640156",
+        "aantallen Totale bevolking aantal": "12661095"
+    },
+    {
+        "Perioden": "1969",
+        "aantallen 20 tot 40 jaar aantal": "3566931",
+        "aantallen 40 tot 65 jaar aantal": "3312816",
+        "aantallen 65 tot 80 jaar aantal": "1065626",
+        "aantallen 80 jaar of ouder aantal": "215347",
+        "aantallen Jonger dan 20 jaar aantal": "4637626",
+        "aantallen Totale bevolking aantal": "12798346"
+    },
+    {
+        "Perioden": "1970",
+        "aantallen 20 tot 40 jaar aantal": "3650362",
+        "aantallen 40 tot 65 jaar aantal": "3338678",
+        "aantallen 65 tot 80 jaar aantal": "1089232",
+        "aantallen 80 jaar of ouder aantal": "221743",
+        "aantallen Jonger dan 20 jaar aantal": "4657606",
+        "aantallen Totale bevolking aantal": "12957621"
+    },
+    {
+        "Perioden": "1971",
+        "aantallen 20 tot 40 jaar aantal": "3730445",
+        "aantallen 40 tot 65 jaar aantal": "3370407",
+        "aantallen 65 tot 80 jaar aantal": "1111504",
+        "aantallen 80 jaar of ouder aantal": "228245",
+        "aantallen Jonger dan 20 jaar aantal": "4678829",
+        "aantallen Totale bevolking aantal": "13119430"
+    },
+    {
+        "Perioden": "1972",
+        "aantallen 20 tot 40 jaar aantal": "3809177",
+        "aantallen 40 tot 65 jaar aantal": "3397711",
+        "aantallen 65 tot 80 jaar aantal": "1132778",
+        "aantallen 80 jaar of ouder aantal": "235147",
+        "aantallen Jonger dan 20 jaar aantal": "4694750",
+        "aantallen Totale bevolking aantal": "13269563"
+    },
+    {
+        "Perioden": "1973",
+        "aantallen 20 tot 40 jaar aantal": "3876435",
+        "aantallen 40 tot 65 jaar aantal": "3424718",
+        "aantallen 65 tot 80 jaar aantal": "1154901",
+        "aantallen 80 jaar of ouder aantal": "240368",
+        "aantallen Jonger dan 20 jaar aantal": "4691201",
+        "aantallen Totale bevolking aantal": "13387623"
+    },
+    {
+        "Perioden": "1974",
+        "aantallen 20 tot 40 jaar aantal": "3948968",
+        "aantallen 40 tot 65 jaar aantal": "3444804",
+        "aantallen 65 tot 80 jaar aantal": "1177000",
+        "aantallen 80 jaar of ouder aantal": "249291",
+        "aantallen Jonger dan 20 jaar aantal": "4670957",
+        "aantallen Totale bevolking aantal": "13491020"
+    },
+    {
+        "Perioden": "1975",
+        "aantallen 20 tot 40 jaar aantal": "4026470",
+        "aantallen 40 tot 65 jaar aantal": "3466969",
+        "aantallen 65 tot 80 jaar aantal": "1201043",
+        "aantallen 80 jaar of ouder aantal": "258378",
+        "aantallen Jonger dan 20 jaar aantal": "4646232",
+        "aantallen Totale bevolking aantal": "13599092"
+    },
+    {
+        "Perioden": "1976",
+        "aantallen 20 tot 40 jaar aantal": "4121445",
+        "aantallen 40 tot 65 jaar aantal": "3497868",
+        "aantallen 65 tot 80 jaar aantal": "1221862",
+        "aantallen 80 jaar of ouder aantal": "268294",
+        "aantallen Jonger dan 20 jaar aantal": "4624109",
+        "aantallen Totale bevolking aantal": "13733578"
+    },
+    {
+        "Perioden": "1977",
+        "aantallen 20 tot 40 jaar aantal": "4197667",
+        "aantallen 40 tot 65 jaar aantal": "3523309",
+        "aantallen 65 tot 80 jaar aantal": "1236344",
+        "aantallen 80 jaar of ouder aantal": "277970",
+        "aantallen Jonger dan 20 jaar aantal": "4579205",
+        "aantallen Totale bevolking aantal": "13814495"
+    },
+    {
+        "Perioden": "1978",
+        "aantallen 20 tot 40 jaar aantal": "4276841",
+        "aantallen 40 tot 65 jaar aantal": "3543413",
+        "aantallen 65 tot 80 jaar aantal": "1259198",
+        "aantallen 80 jaar of ouder aantal": "290128",
+        "aantallen Jonger dan 20 jaar aantal": "4528294",
+        "aantallen Totale bevolking aantal": "13897874"
+    },
+    {
+        "Perioden": "1979",
+        "aantallen 20 tot 40 jaar aantal": "4353469",
+        "aantallen 40 tot 65 jaar aantal": "3571626",
+        "aantallen 65 tot 80 jaar aantal": "1280786",
+        "aantallen 80 jaar of ouder aantal": "300110",
+        "aantallen Jonger dan 20 jaar aantal": "4479535",
+        "aantallen Totale bevolking aantal": "13985526"
+    },
+    {
+        "Perioden": "1980",
+        "aantallen 20 tot 40 jaar aantal": "4441579",
+        "aantallen 40 tot 65 jaar aantal": "3602326",
+        "aantallen 65 tot 80 jaar aantal": "1303447",
+        "aantallen 80 jaar of ouder aantal": "311877",
+        "aantallen Jonger dan 20 jaar aantal": "4431785",
+        "aantallen Totale bevolking aantal": "14091014"
+    },
+    {
+        "Perioden": "1981",
+        "aantallen 20 tot 40 jaar aantal": "4525169",
+        "aantallen 40 tot 65 jaar aantal": "3645612",
+        "aantallen 65 tot 80 jaar aantal": "1318916",
+        "aantallen 80 jaar of ouder aantal": "323091",
+        "aantallen Jonger dan 20 jaar aantal": "4395798",
+        "aantallen Totale bevolking aantal": "14208586"
+    },
+    {
+        "Perioden": "1982",
+        "aantallen 20 tot 40 jaar aantal": "4607340",
+        "aantallen 40 tot 65 jaar aantal": "3679442",
+        "aantallen 65 tot 80 jaar aantal": "1332480",
+        "aantallen 80 jaar of ouder aantal": "335781",
+        "aantallen Jonger dan 20 jaar aantal": "4330786",
+        "aantallen Totale bevolking aantal": "14285829"
+    },
+    {
+        "Perioden": "1983",
+        "aantallen 20 tot 40 jaar aantal": "4676776",
+        "aantallen 40 tot 65 jaar aantal": "3721901",
+        "aantallen 65 tot 80 jaar aantal": "1343109",
+        "aantallen 80 jaar of ouder aantal": "345005",
+        "aantallen Jonger dan 20 jaar aantal": "4252760",
+        "aantallen Totale bevolking aantal": "14339551"
+    },
+    {
+        "Perioden": "1984",
+        "aantallen 20 tot 40 jaar aantal": "4739037",
+        "aantallen 40 tot 65 jaar aantal": "3779544",
+        "aantallen 65 tot 80 jaar aantal": "1350817",
+        "aantallen 80 jaar of ouder aantal": "357641",
+        "aantallen Jonger dan 20 jaar aantal": "4167550",
+        "aantallen Totale bevolking aantal": "14394589"
+    },
+    {
+        "Perioden": "1985",
+        "aantallen 20 tot 40 jaar aantal": "4795956",
+        "aantallen 40 tot 65 jaar aantal": "3843625",
+        "aantallen 65 tot 80 jaar aantal": "1359038",
+        "aantallen 80 jaar of ouder aantal": "370708",
+        "aantallen Jonger dan 20 jaar aantal": "4084506",
+        "aantallen Totale bevolking aantal": "14453833"
+    },
+    {
+        "Perioden": "1986",
+        "aantallen 20 tot 40 jaar aantal": "4863855",
+        "aantallen 40 tot 65 jaar aantal": "3877757",
+        "aantallen 65 tot 80 jaar aantal": "1386796",
+        "aantallen 80 jaar of ouder aantal": "382392",
+        "aantallen Jonger dan 20 jaar aantal": "4018630",
+        "aantallen Totale bevolking aantal": "14529430"
+    },
+    {
+        "Perioden": "1987",
+        "aantallen 20 tot 40 jaar aantal": "4854891",
+        "aantallen 40 tot 65 jaar aantal": "3988197",
+        "aantallen 65 tot 80 jaar aantal": "1411662",
+        "aantallen 80 jaar of ouder aantal": "392352",
+        "aantallen Jonger dan 20 jaar aantal": "3968023",
+        "aantallen Totale bevolking aantal": "14615125"
+    },
+    {
+        "Perioden": "1988",
+        "aantallen 20 tot 40 jaar aantal": "4862329",
+        "aantallen 40 tot 65 jaar aantal": "4090241",
+        "aantallen 65 tot 80 jaar aantal": "1434264",
+        "aantallen 80 jaar of ouder aantal": "405803",
+        "aantallen Jonger dan 20 jaar aantal": "3922311",
+        "aantallen Totale bevolking aantal": "14714948"
+    },
+    {
+        "Perioden": "1989",
+        "aantallen 20 tot 40 jaar aantal": "4879741",
+        "aantallen 40 tot 65 jaar aantal": "4173791",
+        "aantallen 65 tot 80 jaar aantal": "1458653",
+        "aantallen 80 jaar of ouder aantal": "418354",
+        "aantallen Jonger dan 20 jaar aantal": "3874701",
+        "aantallen Totale bevolking aantal": "14805240"
+    },
+    {
+        "Perioden": "1990",
+        "aantallen 20 tot 40 jaar aantal": "4912128",
+        "aantallen 40 tot 65 jaar aantal": "4252617",
+        "aantallen 65 tot 80 jaar aantal": "1477909",
+        "aantallen 80 jaar of ouder aantal": "427715",
+        "aantallen Jonger dan 20 jaar aantal": "3822205",
+        "aantallen Totale bevolking aantal": "14892574"
+    },
+    {
+        "Perioden": "1991",
+        "aantallen 20 tot 40 jaar aantal": "4960023",
+        "aantallen 40 tot 65 jaar aantal": "4330616",
+        "aantallen 65 tot 80 jaar aantal": "1496394",
+        "aantallen 80 jaar of ouder aantal": "437248",
+        "aantallen Jonger dan 20 jaar aantal": "3786164",
+        "aantallen Totale bevolking aantal": "15010445"
+    },
+    {
+        "Perioden": "1992",
+        "aantallen 20 tot 40 jaar aantal": "4998563",
+        "aantallen 40 tot 65 jaar aantal": "4408652",
+        "aantallen 65 tot 80 jaar aantal": "1515408",
+        "aantallen 80 jaar of ouder aantal": "444288",
+        "aantallen Jonger dan 20 jaar aantal": "3762239",
+        "aantallen Totale bevolking aantal": "15129150"
+    },
+    {
+        "Perioden": "1993",
+        "aantallen 20 tot 40 jaar aantal": "5014662",
+        "aantallen 40 tot 65 jaar aantal": "4492523",
+        "aantallen 65 tot 80 jaar aantal": "1529136",
+        "aantallen 80 jaar of ouder aantal": "456391",
+        "aantallen Jonger dan 20 jaar aantal": "3746470",
+        "aantallen Totale bevolking aantal": "15239182"
+    },
+    {
+        "Perioden": "1994",
+        "aantallen 20 tot 40 jaar aantal": "5011430",
+        "aantallen 40 tot 65 jaar aantal": "4570975",
+        "aantallen 65 tot 80 jaar aantal": "1543699",
+        "aantallen 80 jaar of ouder aantal": "464295",
+        "aantallen Jonger dan 20 jaar aantal": "3751154",
+        "aantallen Totale bevolking aantal": "15341553"
+    },
+    {
+        "Perioden": "1995",
+        "aantallen 20 tot 40 jaar aantal": "4981153",
+        "aantallen 40 tot 65 jaar aantal": "4649238",
+        "aantallen 65 tot 80 jaar aantal": "1557819",
+        "aantallen 80 jaar of ouder aantal": "475757",
+        "aantallen Jonger dan 20 jaar aantal": "3760155",
+        "aantallen Totale bevolking aantal": "15424122"
+    },
+    {
+        "Perioden": "1996",
+        "aantallen 20 tot 40 jaar aantal": "4938040",
+        "aantallen 40 tot 65 jaar aantal": "4723368",
+        "aantallen 65 tot 80 jaar aantal": "1579397",
+        "aantallen 80 jaar of ouder aantal": "481475",
+        "aantallen Jonger dan 20 jaar aantal": "3771609",
+        "aantallen Totale bevolking aantal": "15493889"
+    },
+    {
+        "Perioden": "1997",
+        "aantallen 20 tot 40 jaar aantal": "4893195",
+        "aantallen 40 tot 65 jaar aantal": "4802709",
+        "aantallen 65 tot 80 jaar aantal": "1596420",
+        "aantallen 80 jaar of ouder aantal": "487419",
+        "aantallen Jonger dan 20 jaar aantal": "3787364",
+        "aantallen Totale bevolking aantal": "15567107"
+    },
+    {
+        "Perioden": "1998",
+        "aantallen 20 tot 40 jaar aantal": "4848625",
+        "aantallen 40 tot 65 jaar aantal": "4886678",
+        "aantallen 65 tot 80 jaar aantal": "1616527",
+        "aantallen 80 jaar of ouder aantal": "493192",
+        "aantallen Jonger dan 20 jaar aantal": "3809170",
+        "aantallen Totale bevolking aantal": "15654192"
+    },
+    {
+        "Perioden": "1999",
+        "aantallen 20 tot 40 jaar aantal": "4809644",
+        "aantallen 40 tot 65 jaar aantal": "4979805",
+        "aantallen 65 tot 80 jaar aantal": "1634782",
+        "aantallen 80 jaar of ouder aantal": "496152",
+        "aantallen Jonger dan 20 jaar aantal": "3839842",
+        "aantallen Totale bevolking aantal": "15760225"
+    },
+    {
+        "Perioden": "2000",
+        "aantallen 20 tot 40 jaar aantal": "4761504",
+        "aantallen 40 tot 65 jaar aantal": "5076996",
+        "aantallen 65 tot 80 jaar aantal": "1652103",
+        "aantallen 80 jaar of ouder aantal": "500339",
+        "aantallen Jonger dan 20 jaar aantal": "3873008",
+        "aantallen Totale bevolking aantal": "15863950"
+    },
+    {
+        "Perioden": "2001",
+        "aantallen 20 tot 40 jaar aantal": "4727104",
+        "aantallen 40 tot 65 jaar aantal": "5177417",
+        "aantallen 65 tot 80 jaar aantal": "1657864",
+        "aantallen 80 jaar of ouder aantal": "516637",
+        "aantallen Jonger dan 20 jaar aantal": "3908053",
+        "aantallen Totale bevolking aantal": "15987075"
+    },
+    {
+        "Perioden": "2002",
+        "aantallen 20 tot 40 jaar aantal": "4685727",
+        "aantallen 40 tot 65 jaar aantal": "5280208",
+        "aantallen 65 tot 80 jaar aantal": "1667107",
+        "aantallen 80 jaar of ouder aantal": "531607",
+        "aantallen Jonger dan 20 jaar aantal": "3940636",
+        "aantallen Totale bevolking aantal": "16105285"
+    },
+    {
+        "Perioden": "2003",
+        "aantallen 20 tot 40 jaar aantal": "4624170",
+        "aantallen 40 tot 65 jaar aantal": "5378947",
+        "aantallen 65 tot 80 jaar aantal": "1676486",
+        "aantallen 80 jaar of ouder aantal": "543970",
+        "aantallen Jonger dan 20 jaar aantal": "3968999",
+        "aantallen Totale bevolking aantal": "16192572"
+    },
+    {
+        "Perioden": "2004",
+        "aantallen 20 tot 40 jaar aantal": "4548566",
+        "aantallen 40 tot 65 jaar aantal": "5470755",
+        "aantallen 65 tot 80 jaar aantal": "1692856",
+        "aantallen 80 jaar of ouder aantal": "558298",
+        "aantallen Jonger dan 20 jaar aantal": "3987557",
+        "aantallen Totale bevolking aantal": "16258032"
+    },
+    {
+        "Perioden": "2005",
+        "aantallen 20 tot 40 jaar aantal": "4467783",
+        "aantallen 40 tot 65 jaar aantal": "5561116",
+        "aantallen 65 tot 80 jaar aantal": "1715097",
+        "aantallen 80 jaar of ouder aantal": "573573",
+        "aantallen Jonger dan 20 jaar aantal": "3987957",
+        "aantallen Totale bevolking aantal": "16305526"
+    },
+    {
+        "Perioden": "2006",
+        "aantallen 20 tot 40 jaar aantal": "4389840",
+        "aantallen 40 tot 65 jaar aantal": "5638285",
+        "aantallen 65 tot 80 jaar aantal": "1743443",
+        "aantallen 80 jaar of ouder aantal": "587016",
+        "aantallen Jonger dan 20 jaar aantal": "3975626",
+        "aantallen Totale bevolking aantal": "16334210"
+    },
+    {
+        "Perioden": "2007",
+        "aantallen 20 tot 40 jaar aantal": "4319136",
+        "aantallen 40 tot 65 jaar aantal": "5713401",
+        "aantallen 65 tot 80 jaar aantal": "1767510",
+        "aantallen 80 jaar of ouder aantal": "600842",
+        "aantallen Jonger dan 20 jaar aantal": "3957103",
+        "aantallen Totale bevolking aantal": "16357992"
+    },
+    {
+        "Perioden": "2008",
+        "aantallen 20 tot 40 jaar aantal": "4267063",
+        "aantallen 40 tot 65 jaar aantal": "5783060",
+        "aantallen 65 tot 80 jaar aantal": "1799337",
+        "aantallen 80 jaar of ouder aantal": "615489",
+        "aantallen Jonger dan 20 jaar aantal": "3940450",
+        "aantallen Totale bevolking aantal": "16405399"
+    },
+    {
+        "Perioden": "2009",
+        "aantallen 20 tot 40 jaar aantal": "4233861",
+        "aantallen 40 tot 65 jaar aantal": "5846526",
+        "aantallen 65 tot 80 jaar aantal": "1840607",
+        "aantallen 80 jaar of ouder aantal": "631208",
+        "aantallen Jonger dan 20 jaar aantal": "3933585",
+        "aantallen Totale bevolking aantal": "16485787"
+    },
+    {
+        "Perioden": "2010",
+        "aantallen 20 tot 40 jaar aantal": "4192772",
+        "aantallen 40 tot 65 jaar aantal": "5915555",
+        "aantallen 65 tot 80 jaar aantal": "1890334",
+        "aantallen 80 jaar of ouder aantal": "647994",
+        "aantallen Jonger dan 20 jaar aantal": "3928334",
+        "aantallen Totale bevolking aantal": "16574989"
+    },
+    {
+        "Perioden": "2011",
+        "aantallen 20 tot 40 jaar aantal": "4162599",
+        "aantallen 40 tot 65 jaar aantal": "5984435",
+        "aantallen 65 tot 80 jaar aantal": "1927399",
+        "aantallen 80 jaar of ouder aantal": "667547",
+        "aantallen Jonger dan 20 jaar aantal": "3913819",
+        "aantallen Totale bevolking aantal": "16655799"
+    },
+    {
+        "Perioden": "2012",
+        "aantallen 20 tot 40 jaar aantal": "4141893",
+        "aantallen 40 tot 65 jaar aantal": "5977333",
+        "aantallen 65 tot 80 jaar aantal": "2030353",
+        "aantallen 80 jaar of ouder aantal": "686015",
+        "aantallen Jonger dan 20 jaar aantal": "3894754",
+        "aantallen Totale bevolking aantal": "16730348"
+    },
+    {
+        "Perioden": "2013",
+        "aantallen 20 tot 40 jaar aantal": "4120358",
+        "aantallen 40 tot 65 jaar aantal": "5964099",
+        "aantallen 65 tot 80 jaar aantal": "2121525",
+        "aantallen 80 jaar of ouder aantal": "702820",
+        "aantallen Jonger dan 20 jaar aantal": "3870773",
+        "aantallen Totale bevolking aantal": "16779575"
+    },
+    {
+        "Perioden": "2014",
+        "aantallen 20 tot 40 jaar aantal": "4117652",
+        "aantallen 40 tot 65 jaar aantal": "5946573",
+        "aantallen 65 tot 80 jaar aantal": "2201935",
+        "aantallen 80 jaar of ouder aantal": "717089",
+        "aantallen Jonger dan 20 jaar aantal": "3846040",
+        "aantallen Totale bevolking aantal": "16829289"
+    },
+    {
+        "Perioden": "2015",
+        "aantallen 20 tot 40 jaar aantal": "4134447",
+        "aantallen 40 tot 65 jaar aantal": "5930535",
+        "aantallen 65 tot 80 jaar aantal": "2272709",
+        "aantallen 80 jaar of ouder aantal": "734976",
+        "aantallen Jonger dan 20 jaar aantal": "3828059",
+        "aantallen Totale bevolking aantal": "16900726"
+    },
+    {
+        "Perioden": "2016",
+        "aantallen 20 tot 40 jaar aantal": "4163702",
+        "aantallen 40 tot 65 jaar aantal": "5911611",
+        "aantallen 65 tot 80 jaar aantal": "2336560",
+        "aantallen 80 jaar of ouder aantal": "748748",
+        "aantallen Jonger dan 20 jaar aantal": "3818499",
+        "aantallen Totale bevolking aantal": "16979120"
+    },
+    {
+        "Perioden": "2017",
+        "aantallen 20 tot 40 jaar aantal": "4206639",
+        "aantallen 40 tot 65 jaar aantal": "5898035",
+        "aantallen 65 tot 80 jaar aantal": "2395385",
+        "aantallen 80 jaar of ouder aantal": "764275",
+        "aantallen Jonger dan 20 jaar aantal": "3817173",
+        "aantallen Totale bevolking aantal": "17081507"
+    },
+    {
+        "Perioden": "2018",
+        "aantallen 20 tot 40 jaar aantal": "4253083",
+        "aantallen 40 tot 65 jaar aantal": "5878229",
+        "aantallen 65 tot 80 jaar aantal": "2460202",
+        "aantallen 80 jaar of ouder aantal": "778914",
+        "aantallen Jonger dan 20 jaar aantal": "3810656",
+        "aantallen Totale bevolking aantal": "17181084"
+    }
+]
