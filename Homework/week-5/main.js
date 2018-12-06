@@ -128,8 +128,8 @@ function makeGraph(data) {
   };
 
   const margin = 80;
-  const width = 1000 - 2 * margin;
-  const height = 800 - 2 * margin;
+  const width = 750 - 2 * margin;
+  const height = 500 - 2 * margin;
   const dropdown = d3.select("body")
                      .append("div")
                      .attr("id", "dropdown");
@@ -157,7 +157,7 @@ function makeGraph(data) {
 
   const svg = d3.select("body")
               .append("svg")
-              .attr("width", (width+ 2 * margin) + "px")
+              .attr("width", (width+ 2 * margin) + 250 + "px")
               .attr("height", height + 2 * margin);
 
 
@@ -206,7 +206,7 @@ function makeGraph(data) {
        .data(selectedData)
      .enter().append("g")
        .attr("class", "legend")
-       .attr("transform", function(d, i) { return "translate(" +  margin + "," + (height - margin/ 2 + i * 20) + ")"; })
+       .attr("transform", function(d, i) { return "translate(" + 200 + "," + (height - margin/ 2 + i * 20) + ")"; })
 
    // draw legend colored rectangles
     legend.append("rect")
@@ -220,8 +220,9 @@ function makeGraph(data) {
     legend.append("text")
         .attr("x", width - 24)
         .attr("y", 9)
-        .attr("dy", ".35em")
+        .attr("dy", ".25em")
         .style("text-anchor", "end")
+        .style("font-size", "12px")
         .text(function(d) { return d.country;})
 
   // makes the
