@@ -1,3 +1,7 @@
+// Name : Coen Mol
+// Studentennummer: 123 09524
+// Opdracht: Scatterplot
+
 window.onload = function() {
   var linkData = "http://stats.oecd.org/SDMX-JSON/data/MSTI_PUB/TH_WRXRS.FRA+DEU+KOR+NLD+PRT+GBR/all?startTime=2007&endTime=2015"
   var consConf = "http://stats.oecd.org/SDMX-JSON/data/HH_DASH/FRA+DEU+KOR+NLD+PRT+GBR.COCONF.A/all?startTime=2007&endTime=2015"
