@@ -73,7 +73,8 @@ window.onload = function() {
     // return the finished product!
     return dataArray;
   }
-function parseDate(data) {
+
+  function parseDate(data) {
       var dataArray = []
 
       data[0].forEach(function(array) {
@@ -136,6 +137,8 @@ function makeGraph(data) {
  const tooltip = d3.select("body")
                    .append("div")
                    .attr("class", "tooltip");
+
+  d3.select("body").append("p")
 
    // dropdown menu
    const menu = d3.select("#dropdown")
@@ -243,6 +246,33 @@ function makeGraph(data) {
           })
       		.on("mouseout", function(d){ tooltip.style("display", "none");});
 
+
+  // Headtext
+  svg.append("text")
+      .attr("x", (width / 2))
+      .attr("y", 0 + (margin / 2))
+      .attr("text-anchor", "middle")
+      .style("font-size", "16px")
+      .style("font-style", "bold")
+      .text("Comparision in the confidence score and percentage women in science per country");
+
+  // text label for the x axis
+  svg.append("text")
+      .attr("transform",
+            "translate(" + (width/2) + " ," +
+                           (height + margin + 50) + ")")
+      .style("text-anchor", "middle")
+      .text("Percentage women in science (in %)");
+
+
+  // text label for the y axis
+  svg.append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 0)
+      .attr("x",0 - (height / 2))
+      .attr("dy", "1em")
+      .style("text-anchor", "middle")
+      .text("Consumer confidence score");
 
 
 
