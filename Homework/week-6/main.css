@@ -1,0 +1,6 @@
+.bar {
+  fill : grey;
+}
+.bar:click {
+  fill: red;
+}
