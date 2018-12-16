@@ -125,6 +125,7 @@ function makeBar(data, selectedData, country, year) {
                                                 return z(i) })
                 .attr("key", function (d) { return d.key});
 
+    // append the bars
     serie.selectAll(".series")
       .data(function(d) { return d})
       .enter().append("rect")
@@ -167,17 +168,17 @@ function makeBar(data, selectedData, country, year) {
     // legend
     var legendDomain = z
      var legend = svg.selectAll(".legend")
-         .data(list)
+         .data(list.reverse())
        .enter().append("g")
          .attr("class", "legend")
-         .attr("transform", function(d, i) { return "translate(" + 200 + "," + (height - 3 *  margin + i * 20) + ")"; })
+         .attr("transform", function(d, i) { return "translate(" + 200 + "," + (height + 40 - i * 20) + ")"; })
 
      // draw legend colored rectangles
       legend.append("rect")
           .attr("x", width - 18)
           .attr("width", 10)
           .attr("height", 15)
-          .style("fill", function(d, i) { return z(i)})
+          .style("fill", function(d, i) { return z(list.length - i)})
           .style("stroke", "black");
 
       // draw legend text
@@ -187,7 +188,34 @@ function makeBar(data, selectedData, country, year) {
           .attr("dy", ".25em")
           .style("text-anchor", "end")
           .style("font-size", "12px")
-          .text(function(d) { return d;})
+          .text(function(d) { return d;});
+
+      // text label for the x axis
+      svg.append("text")
+          .attr("transform",
+                "translate(" + ((width/2) + margin) + " ," +
+                               (height + margin + 50) + ")")
+          .style("text-anchor", "middle")
+          .text("Countries");
+
+
+      // text label for the y axis
+      svg.append("text")
+          .attr("transform", "rotate(-90)")
+          .attr("y", 0)
+          .attr("x",0 - (height / 2) - margin)
+          .attr("dy", "1em")
+          .style("text-anchor", "middle")
+          .text("Population");
+
+      // Headtext
+      svg.append("text")
+          .attr("x", (width / 2))
+          .attr("y", 0 + (margin / 2))
+          .attr("text-anchor", "middle")
+          .style("font-size", "16px")
+          .style("font-style", "bold")
+          .text("Comparision between the population of Denmark and Austria");
 
 
 
@@ -228,9 +256,9 @@ function makeBar(data, selectedData, country, year) {
         var stackData = stack.keys(list)(dataList)
       g.selectAll(".series")
                   .data(stackData)
-                  .enter()
+                  .enter();
 
-      d3.selectAll("rect").remove()
+      d3.selectAll("rect.bar").remove();
 
       // change graph
       serie.selectAll(".series")
@@ -245,16 +273,18 @@ function makeBar(data, selectedData, country, year) {
         .on("click", function(d) {
           if (d3.select(this).attr("selected") === "yes"){
             d3.selectAll(".bar").attr("selected", "no")
-            d3.select("svg.piechart").remove()
+            d3.select(this).attr("stroke", "none")
+            d3.select("svg.piechart").remove();
           }
           else {
-            d3.selectAll(".bar").attr("selected", "no")
+            d3.selectAll(".bar").attr("selected", "no").attr("stroke", "none")
             d3.select(this).attr("selected", "yes")
+            d3.select(this).attr("stroke", "black")
+            d3.select(this).attr("stroke-width", "2px")
             var key = d3.select(this.parentNode).attr("key")
-            makePie(selectedData[d.data.country][key])
+            makePie(selectedData[d.data.country][key]);
           }
         });
-
       }
     })
 }
