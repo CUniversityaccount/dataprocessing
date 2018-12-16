@@ -62,12 +62,18 @@ function makeBar(data, selectedData, country, year) {
   var index = list.indexOf("ages")
   list.splice(index, 1)
   list.sort()
-
+  console.log(d3.schemeCategory15)
   console.log(list)
-  var z = d3.scaleOrdinal(d3.schemeCategory10)
-            .domain(list);
+  var z = d3.scaleLinear()
+            .domain([0, list.length])
+            .interpolate(d3.interpolateLab)
+            .range(["yellow", "purple", "green"]);
 
 
+
+
+
+  console.log(z)
   const svg = d3.select("body")
               .append("svg")
               .attr("class", "bargraph")
@@ -115,7 +121,8 @@ function makeBar(data, selectedData, country, year) {
               .enter()
               .append("g")
                 .attr("class", "series")
-                .attr('fill', function(d) { return z(d.key) })
+                .attr('fill', function(d, i) { console.log(d)
+                                                return z(i) })
                 .attr("key", function (d) { return d.key});
 
     serie.selectAll(".series")
@@ -128,7 +135,6 @@ function makeBar(data, selectedData, country, year) {
       .attr("height", function(d) { return yAxis(d[0] *selectedData[d.data.country]["ages"]["All persons"]) - yAxis(d[1] * selectedData[d.data.country]["ages"]["All persons"]); })
       .attr("selected", "no")
       .on("click", function(d) {
-        console.log(d)
         if (d3.select(this).attr("selected") === "yes"){
           d3.selectAll(".bar").attr("selected", "no")
           d3.select(this).attr("stroke", "none")
@@ -171,7 +177,7 @@ function makeBar(data, selectedData, country, year) {
           .attr("x", width - 18)
           .attr("width", 10)
           .attr("height", 15)
-          .style("fill", function(d) { return z(d)})
+          .style("fill", function(d, i) { return z(i)})
           .style("stroke", "black");
 
       // draw legend text
@@ -254,7 +260,6 @@ function makeBar(data, selectedData, country, year) {
 }
 
 function makePie(data) {
-  console.log(data)
   var values = parsePie(data)
   var color = d3.scaleOrdinal().range(["#00008b", "#FFC0CB"]);
   var width = 960,
@@ -266,7 +271,7 @@ function makePie(data) {
               .outerRadius(radius);
 
   var pie = d3.pie()
-              .value(function(d) { return (d / data["All persons"]); })
+              .value(function(d) { return (Object.values(d) / data["All persons"]); })
               .sort(null);
 
   var elementExists = document.getElementsByClassName("piechart")
@@ -281,8 +286,8 @@ function makePie(data) {
   }
   var svg = d3.select("svg.piechart")
               .append("g")
-              .attr("transform", "translate("+ radius + ", " + radius + ")");
-
+              .attr("transform", "translate("+ width / 2 + ", " + radius + ")");
+  d3.select("svg.piechart").selectAll("text").remove()
   var path = svg.selectAll('path')
               .data(pie(values))
               .enter()
@@ -291,8 +296,25 @@ function makePie(data) {
               .attr('fill', function(d, i) {
                 return color(i);
               })
+              .attr("stroke", "black")
 
+              svg.selectAll("text")
+              .data(pie(values))
+              .enter()
+              .append("text")
+              .attr("transform", function(d) {
+                var _d = arc.centroid(d);
+                _d[0] *= 2.5;	//multiply by a constant factor
+                _d[1] *= 2.5;	//multiply by a constant factor
+                return "translate(" + _d + ")";
+              })
+              .attr("dy", ".50em")
+              .style("text-anchor", "middle")
+              .attr("fill", "black")
+              .text(function(d, i) {console.log(values[i])
+                                    return Object.keys(values[i]) + ": " + Object.values(values[i]) });
   if (elementExists != 0) {
+
     var values = parsePie(data)
     pie.value(function(d) { return (d / data["All persons"]); })
     path = path.data(pie(values))
@@ -303,7 +325,7 @@ function parsePie(data) {
   console.log(data)
   var male = data.Males
   var female = data.Females
-  return [male, female]
+  return [{Male: male}, {Female: female}]
 }
 
 
