@@ -1,7 +1,8 @@
 // Name : Coen Mol
 // Studentennummer: 123 09524
 // Opdracht: Linked Views
-
+// Source: https://stats.oecd.org/index.aspx?DatasetCode=POP_FIVE_HIST
+console.log("source: https://stats.oecd.org/index.aspx?DatasetCode=POP_FIVE_HIST")
 
 function parseData(data) {
   var groupData = d3.nest()
@@ -62,18 +63,11 @@ function makeBar(data, selectedData, country, year) {
   var index = list.indexOf("ages")
   list.splice(index, 1)
   list.sort()
-  console.log(d3.schemeCategory15)
-  console.log(list)
   var z = d3.scaleLinear()
             .domain([0, list.length])
             .interpolate(d3.interpolateLab)
             .range(["yellow", "purple", "green"]);
 
-
-
-
-
-  console.log(z)
   const svg = d3.select("body")
               .append("svg")
               .attr("class", "bargraph")
@@ -108,7 +102,6 @@ function makeBar(data, selectedData, country, year) {
   Object.values(selectedData).forEach(function(d) {
       var dict = {}
     list.forEach(function (dp) {
-      console.log(d[dp].country)
       dict["country"] = d[dp].country
       dict[dp] = d[dp]["All persons"]
     });
@@ -121,8 +114,7 @@ function makeBar(data, selectedData, country, year) {
               .enter()
               .append("g")
                 .attr("class", "series")
-                .attr('fill', function(d, i) { console.log(d)
-                                                return z(i) })
+                .attr('fill', function(d, i) { return z(i) })
                 .attr("key", function (d) { return d.key});
 
     // append the bars
@@ -246,7 +238,6 @@ function makeBar(data, selectedData, country, year) {
         Object.values(data).forEach(function(d) {
             var dict = {}
           list.forEach(function (dp) {
-            console.log(d[dp].country)
             dict["country"] = d[dp].country
             dict[dp] = d[dp]["All persons"]
           });
@@ -341,8 +332,7 @@ function makePie(data) {
               .attr("dy", ".50em")
               .style("text-anchor", "middle")
               .attr("fill", "black")
-              .text(function(d, i) {console.log(values[i])
-                                    return Object.keys(values[i]) + ": " + Object.values(values[i]) });
+              .text(function(d, i) { return Object.keys(values[i]) + ": " + Object.values(values[i]) });
   if (elementExists != 0) {
 
     var values = parsePie(data)
@@ -352,7 +342,6 @@ function makePie(data) {
 }
 
 function parsePie(data) {
-  console.log(data)
   var male = data.Males
   var female = data.Females
   return [{Male: male}, {Female: female}]
